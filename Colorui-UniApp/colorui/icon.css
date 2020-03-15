@@ -22,11 +22,19 @@
 	display: inline-block;
 }
 
-[class*="cuIcon-"] {
+[class*="cuIcon-"]:not(view) {
 	font-family: "cuIcon";
 	font-size: inherit;
 	font-style: normal;
 }
+
+/* view 标签不继承 font-size 可自定义大小 */
+view[class*="cuIcon-"] {
+	font-family: "cuIcon";
+	font-style: normal;
+}
+
+
 
 @font-face {
 	font-family: "cuIcon";
