@@ -4,181 +4,347 @@
  */
 
 /* css 滤镜 控制黑白底色gif的 */
-.gif-black{  
-  mix-blend-mode: screen;  
+.gif-black {
+  mix-blend-mode: screen;
 }
-.gif-white{  
-  mix-blend-mode: multiply; 
+.gif-white {
+  mix-blend-mode: multiply;
 }
 
+/* ==================
+          动画
+ ==================== */
 
 /* Animation css */
-[class*=animation-] {
-    animation-duration: .5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both
+[class*='animation-'] {
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
 }
 
+[class*='animation-']:not([class*='animation-time-']) {
+  animation-duration: 500ms;
+}
+
+/*  -- 动画 -- */
 .animation-fade {
-    animation-name: fade;
-    animation-duration: .8s;
-    animation-timing-function: linear
+  animation-name: fade;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
 }
 
 .animation-scale-up {
-    animation-name: scale-up
+  animation-name: scale-up;
 }
 
 .animation-scale-down {
-    animation-name: scale-down
+  animation-name: scale-down;
 }
 
 .animation-slide-top {
-    animation-name: slide-top
+  animation-name: slide-top;
 }
 
 .animation-slide-bottom {
-    animation-name: slide-bottom
+  animation-name: slide-bottom;
 }
 
 .animation-slide-left {
-    animation-name: slide-left
+  animation-name: slide-left;
 }
 
 .animation-slide-right {
-    animation-name: slide-right
+  animation-name: slide-right;
 }
 
 .animation-shake {
-    animation-name: shake
+  animation-name: shake;
 }
 
 .animation-reverse {
-    animation-direction: reverse
+  animation-direction: reverse;
 }
 
 @keyframes fade {
-    0% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes scale-up {
-    0% {
-        opacity: 0;
-        transform: scale(.2)
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
 
-    100% {
-        opacity: 1;
-        transform: scale(1)
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes scale-down {
-    0% {
-        opacity: 0;
-        transform: scale(1.8)
-    }
+  0% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
 
-    100% {
-        opacity: 1;
-        transform: scale(1)
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes slide-top {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%)
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slide-bottom {
-    0% {
-        opacity: 0;
-        transform: translateY(100%)
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
-    0%,
-    100% {
-        transform: translateX(0)
-    }
+  10% {
+    transform: translateX(-9px);
+  }
 
-    10% {
-        transform: translateX(-9px)
-    }
+  20% {
+    transform: translateX(8px);
+  }
 
-    20% {
-        transform: translateX(8px)
-    }
+  30% {
+    transform: translateX(-7px);
+  }
 
-    30% {
-        transform: translateX(-7px)
-    }
+  40% {
+    transform: translateX(6px);
+  }
 
-    40% {
-        transform: translateX(6px)
-    }
+  50% {
+    transform: translateX(-5px);
+  }
 
-    50% {
-        transform: translateX(-5px)
-    }
+  60% {
+    transform: translateX(4px);
+  }
 
-    60% {
-        transform: translateX(4px)
-    }
+  70% {
+    transform: translateX(-3px);
+  }
 
-    70% {
-        transform: translateX(-3px)
-    }
+  80% {
+    transform: translateX(2px);
+  }
 
-    80% {
-        transform: translateX(2px)
-    }
-
-    90% {
-        transform: translateX(-1px)
-    }
+  90% {
+    transform: translateX(-1px);
+  }
 }
 
 @keyframes slide-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slide-right {
-    0% {
-        opacity: 0;
-        transform: translateX(100%)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*  -- 动画时长 -- */
+.animation-time-200ms {
+  animation-duration: 200ms;
+}
+
+.animation-time-300ms {
+  animation-duration: 300ms;
+}
+
+.animation-time-400ms {
+  animation-duration: 400ms;
+}
+
+.animation-time-500ms {
+  animation-duration: 500ms;
+}
+
+.animation-time-600ms {
+  animation-duration: 600ms;
+}
+
+.animation-time-800ms {
+  animation-duration: 800ms;
+}
+
+.animation-time-1000ms {
+  animation-duration: 1000ms;
+}
+
+.animation-time-1s {
+  animation-duration: 1s;
+}
+
+.animation-time-2s {
+  animation-duration: 2s;
+}
+
+.animation-time-3s {
+  animation-duration: 3s;
+}
+
+.animation-time-4s {
+  animation-duration: 4s;
+}
+
+.animation-time-5s {
+  animation-duration: 5s;
+}
+
+/* ==================
+          过渡动画
+ ==================== */
+
+[class*='transition-'] {
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+[class*='transition-']:not([class*='transition-time-']) {
+  transition-duration: 500ms;
+}
+
+/*  -- 过渡动画 -- */
+
+.transition-fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.transition-fade-half {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.transition-fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.transition-slide-top-in,
+.transition-slide-bottom-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transition-slide-top-out {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.transition-slide-bottom-out {
+  transform: translateY(100%);
+}
+
+.transition-slide-right-in,
+.transition-slide-left-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.transition-slide-left-out {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.transition-slide-right-out {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+/*  -- 过渡动画时长 -- */
+
+.transition-time-200ms {
+  transition-duration: 200ms;
+}
+
+.transition-time-300ms {
+  transition-duration: 300ms;
+}
+
+.transition-time-400ms {
+  transition-duration: 400ms;
+}
+
+.transition-time-500ms {
+  transition-duration: 500ms;
+}
+
+.transition-time-600ms {
+  transition-duration: 600ms;
+}
+
+.transition-time-800ms {
+  transition-duration: 800ms;
+}
+
+.transition-time-1000ms {
+  transition-duration: 1000ms;
+}
+
+.transition-time-1s {
+  transition-duration: 1s;
+}
+
+.transition-time-2s {
+  transition-duration: 2s;
+}
+
+.transition-time-3s {
+  transition-duration: 3s;
+}
+
+.transition-time-4s {
+  transition-duration: 4s;
+}
+
+.transition-time-5s {
+  transition-duration: 5s;
 }
