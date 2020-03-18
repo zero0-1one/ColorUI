@@ -568,6 +568,13 @@ radio.white.checked .uni-radio-input {
 .shadow-lg {
   --ShadowSize: 0upx 40upx 100upx 0upx;
 }
+.shadow-around {
+  box-shadow: 0rpx 0rpx 20upx 0rpx rgba(0, 0, 0, 0.1);
+}
+
+.shadow-around-lg {
+  box-shadow: 0rpx 0rpx 50upx 0rpx rgba(0, 0, 0, 0.1);
+}
 
 .shadow-warp {
   position: relative;
@@ -2352,7 +2359,6 @@ button.cuIcon.lg {
 
 .cu-form-group > text[class*='cuIcon-'] {
   font-size: 36upx;
-  padding: 0;
   box-sizing: border-box;
 }
 
