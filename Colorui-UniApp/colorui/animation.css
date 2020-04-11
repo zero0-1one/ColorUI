@@ -227,7 +227,7 @@
           过渡动画
  ==================== */
 
-[class*='transition-'] {
+[class*='transition-']:not(.transition-off) {
   transition-property: all;
   transition-timing-function: ease-in-out;
   transition-duration: 500ms;

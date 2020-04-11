@@ -697,6 +697,12 @@ radio.white.checked .uni-radio-input {
   height: 80upx;
 }
 
+.cu-btn.xl {
+  padding: 0 50upx;
+  font-size: 40upx;
+  height: 100upx;
+}
+
 .cu-btn.cuIcon.sm {
   width: 48upx;
   height: 48upx;
@@ -712,6 +718,11 @@ radio.white.checked .uni-radio-input {
 button.cuIcon.lg {
   width: 80upx;
   height: 80upx;
+}
+
+button.cuIcon.xl {
+  width: 100upx;
+  height: 100upx;
 }
 
 .cu-btn.shadow-blur::before {
@@ -1048,11 +1059,11 @@ button.cuIcon.lg {
   content: '没有更多了';
 }
 
-.cu-load.erro::before {
+.cu-load.error::before {
   content: '\e658';
 }
 
-.cu-load.erro::after {
+.cu-load.error::after {
   content: '加载失败';
 }
 
@@ -2353,8 +2364,11 @@ button.cuIcon.lg {
 .cu-form-group input {
   flex: 1;
   font-size: 30upx;
-  color: #555;
   padding-right: 20upx;
+}
+
+.cu-form-group input:not([class*='text-']) {
+  color: #555;
 }
 
 .cu-form-group > text[class*='cuIcon-'] {
@@ -2797,7 +2811,10 @@ scroll-view.cu-steps .cu-item {
 /* ==================
           布局
  ==================== */
-
+.full {
+  width: 100%;
+  height: 100%;
+}
 /*  -- flex弹性布局 -- */
 
 .flex {
@@ -2834,6 +2851,7 @@ scroll-view.cu-steps .cu-item {
   flex-basis: 80%;
 }
 
+.flex-space,
 .flex-sub {
   flex: 1;
 }
@@ -3766,6 +3784,9 @@ scroll-view.cu-steps .cu-item {
 /* ==================
           文本
  ==================== */
+.underline {
+  text-decoration: underline;
+}
 
 .text-xs {
   font-size: 20upx;
@@ -3798,6 +3819,81 @@ scroll-view.cu-steps .cu-item {
 .text-xsl {
   font-size: 120upx;
 }
+
+.zoom-in-1 .text-xs {
+  font-size: 24upx;
+}
+
+.zoom-in-1 .text-sm {
+  font-size: 28upx;
+}
+
+.zoom-in-1 .text-df {
+  font-size: 32upx;
+}
+
+.zoom-in-1 .text-lg {
+  font-size: 36upx;
+}
+
+.zoom-in-1 .text-xl {
+  font-size: 40upx;
+}
+
+.zoom-in-1 .text-xxl {
+  font-size: 48upx;
+}
+
+/* 
+.zoom-in-2 .text-xs {
+  font-size: 28upx;
+}
+
+.zoom-in-2 .text-sm {
+  font-size: 32upx;
+}
+
+.zoom-in-2 .text-df {
+  font-size: 36upx;
+}
+
+.zoom-in-2 .text-lg {
+  font-size: 40upx;
+}
+
+.zoom-in-2 .text-xl {
+  font-size: 44upx;
+}
+
+.zoom-in-2 .text-xxl {
+  font-size: 52upx;
+} 
+
+
+.zoom-out-1 .text-xs {
+  font-size: 18upx;
+}
+
+.zoom-out-1 .text-sm {
+  font-size: 21upx;
+}
+
+.zoom-out-1 .text-df {
+  font-size: 24upx;
+}
+
+.zoom-out-1 .text-lg {
+  font-size: 28upx;
+}
+
+.zoom-out-1 .text-xl {
+  font-size: 32upx;
+}
+
+.zoom-out-1 .text-xxl {
+  font-size: 40upx;
+} 
+*/
 
 .text-Abc {
   text-transform: Capitalize;
