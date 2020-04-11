@@ -3820,80 +3820,29 @@ scroll-view.cu-steps .cu-item {
   font-size: 120upx;
 }
 
-.zoom-in-1 .text-xs {
-  font-size: 24upx;
+.zoom-in-1.text-xs {
+  font-size: 22upx;
 }
 
-.zoom-in-1 .text-sm {
-  font-size: 28upx;
+.zoom-in-1.text-sm {
+  font-size: 26upx;
 }
 
-.zoom-in-1 .text-df {
-  font-size: 32upx;
+.zoom-in-1.text-df {
+  font-size: 31upx;
 }
 
-.zoom-in-1 .text-lg {
-  font-size: 36upx;
+.zoom-in-1.text-lg {
+  font-size: 35upx;
 }
 
-.zoom-in-1 .text-xl {
+.zoom-in-1.text-xl {
   font-size: 40upx;
 }
 
-.zoom-in-1 .text-xxl {
+.zoom-in-1.text-xxl {
   font-size: 48upx;
 }
-
-/* 
-.zoom-in-2 .text-xs {
-  font-size: 28upx;
-}
-
-.zoom-in-2 .text-sm {
-  font-size: 32upx;
-}
-
-.zoom-in-2 .text-df {
-  font-size: 36upx;
-}
-
-.zoom-in-2 .text-lg {
-  font-size: 40upx;
-}
-
-.zoom-in-2 .text-xl {
-  font-size: 44upx;
-}
-
-.zoom-in-2 .text-xxl {
-  font-size: 52upx;
-} 
-
-
-.zoom-out-1 .text-xs {
-  font-size: 18upx;
-}
-
-.zoom-out-1 .text-sm {
-  font-size: 21upx;
-}
-
-.zoom-out-1 .text-df {
-  font-size: 24upx;
-}
-
-.zoom-out-1 .text-lg {
-  font-size: 28upx;
-}
-
-.zoom-out-1 .text-xl {
-  font-size: 32upx;
-}
-
-.zoom-out-1 .text-xxl {
-  font-size: 40upx;
-} 
-*/
 
 .text-Abc {
   text-transform: Capitalize;
