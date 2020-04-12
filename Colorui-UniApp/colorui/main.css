@@ -2815,6 +2815,23 @@ scroll-view.cu-steps .cu-item {
   width: 100%;
   height: 100%;
 }
+
+.top-max {
+  z-index: 999;
+}
+
+.top-h {
+  z-index: 90;
+}
+
+.top-m {
+  z-index: 50;
+}
+
+.top-l {
+  z-index: 10;
+}
+
 /*  -- flex弹性布局 -- */
 
 .flex {
@@ -3820,27 +3837,27 @@ scroll-view.cu-steps .cu-item {
   font-size: 120upx;
 }
 
-.zoom-in-1.text-xs {
+.zoom-in-1 .text-xs.zoom {
   font-size: 22upx;
 }
 
-.zoom-in-1.text-sm {
+.zoom-in-1 .text-sm.zoom {
   font-size: 26upx;
 }
 
-.zoom-in-1.text-df {
+.zoom-in-1 .text-df.zoom {
   font-size: 31upx;
 }
 
-.zoom-in-1.text-lg {
+.zoom-in-1 .text-lg.zoom {
   font-size: 35upx;
 }
 
-.zoom-in-1.text-xl {
+.zoom-in-1 .text-xl.zoom {
   font-size: 40upx;
 }
 
-.zoom-in-1.text-xxl {
+.zoom-in-1 .text-xxl.zoom {
   font-size: 48upx;
 }
 
