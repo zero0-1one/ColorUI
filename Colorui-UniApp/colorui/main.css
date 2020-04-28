@@ -11,7 +11,7 @@
         初始化
  ==================== */
 body {
-  background-color: #f1f1f1;
+  background-color: rgb(242, 242, 242);
   font-size: 28upx;
   color: #333333;
   font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -498,23 +498,23 @@ radio.white.checked .uni-radio-input {
 }
 
 .solid::after {
-  border: 1upx solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-top::after {
-  border-top: 1upx solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-right::after {
-  border-right: 1upx solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-bottom::after {
-  border-bottom: 1upx solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-left::after {
-  border-left: 1upx solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .solids::after {
@@ -540,29 +540,29 @@ radio.white.checked .uni-radio-input {
 /* -- 虚线 -- */
 
 .dashed::after {
-  border: 1upx dashed #ddd;
+  border: 1px dashed #ddd;
 }
 
 .dashed-top::after {
-  border-top: 1upx dashed #ddd;
+  border-top: 1px dashed #ddd;
 }
 
 .dashed-right::after {
-  border-right: 1upx dashed #ddd;
+  border-right: 1px dashed #ddd;
 }
 
 .dashed-bottom::after {
-  border-bottom: 1upx dashed #ddd;
+  border-bottom: 1px dashed #ddd;
 }
 
 .dashed-left::after {
-  border-left: 1upx dashed #ddd;
+  border-left: 1px dashed #ddd;
 }
 
 /* -- 阴影 -- */
 
 .shadow[class*='white'] {
-  --ShadowSize: 0 1upx 6upx;
+  --ShadowSize: 0 1px 6upx;
 }
 
 .shadow-lg {
@@ -664,7 +664,7 @@ radio.white.checked .uni-radio-input {
   position: absolute;
   top: 0;
   left: 0;
-  border: 1upx solid currentColor;
+  border: 1px solid currentColor;
   transform: scale(0.5);
   transform-origin: 0 0;
   box-sizing: border-box;
@@ -733,7 +733,7 @@ button.cuIcon.xl {
 }
 
 .cu-btn.button-hover {
-  transform: translate(1upx, 1upx);
+  transform: translate(1px, 1px);
 }
 
 .block {
@@ -778,7 +778,7 @@ button.cuIcon.xl {
   position: absolute;
   top: 0;
   left: 0;
-  border: 1upx solid currentColor;
+  border: 1px solid currentColor;
   transform: scale(0.5);
   transform-origin: 0 0;
   box-sizing: border-box;
@@ -945,7 +945,7 @@ button.cuIcon.xl {
 
 .cu-avatar-group .cu-avatar.sm {
   margin-left: -20upx;
-  border: 1upx solid #f1f1f1;
+  border: 1px solid #f1f1f1;
 }
 
 /* ==================
@@ -1324,7 +1324,7 @@ button.cuIcon.xl {
   box-sizing: border-box;
   width: 200%;
   height: 200%;
-  border-bottom: 1upx solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-radius: inherit;
   content: ' ';
   transform: scale(0.5);
@@ -1686,7 +1686,7 @@ button.cuIcon.xl {
   width: 100%;
   top: 0;
   z-index: 1024;
-  box-shadow: 0 1upx 6upx rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 6upx rgba(0, 0, 0, 0.1);
 }
 
 .cu-bar.foot {
@@ -1694,7 +1694,7 @@ button.cuIcon.xl {
   width: 100%;
   bottom: 0;
   z-index: 1024;
-  box-shadow: 0 -1upx 6upx rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 6upx rgba(0, 0, 0, 0.1);
 }
 
 .cu-bar.tabbar {
@@ -1709,7 +1709,7 @@ button.cuIcon.xl {
 }
 
 .cu-bar.tabbar.shadow {
-  box-shadow: 0 -1upx 6upx rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 6upx rgba(0, 0, 0, 0.1);
 }
 
 .cu-bar.tabbar .action {
@@ -1839,7 +1839,7 @@ button.cuIcon.xl {
   left: 0;
   transform: scale(0.5);
   transform-origin: 0 0;
-  border-right: 1upx solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 3;
 }
 
@@ -1931,13 +1931,13 @@ button.cuIcon.xl {
   transform-origin: 0 0;
   pointer-events: none;
   box-sizing: border-box;
-  border: 1upx solid #ffffff;
+  border: 1px solid #ffffff;
   opacity: 0.5;
 }
 
 .cu-custom .cu-bar .border-custom::before {
   content: ' ';
-  width: 1upx;
+  width: 1px;
   height: 110%;
   position: absolute;
   top: 22.5%;
@@ -1990,36 +1990,28 @@ button.cuIcon.xl {
 
 .cu-timeline {
   display: block;
-  background-color: #ffffff;
 }
 
 .cu-timeline .cu-time {
-  width: 120upx;
-  text-align: center;
-  padding: 20upx 0;
-  font-size: 26upx;
-  color: #888;
+  padding-top: 20upx;
+  padding-bottom: 20upx;
   display: block;
 }
 
 .cu-timeline > .cu-item {
-  padding: 30upx 30upx 30upx 120upx;
+  padding-left: 80upx;
   position: relative;
   display: block;
   z-index: 0;
-}
-
-.cu-timeline > .cu-item:not([class*='text-']) {
-  color: #ccc;
 }
 
 .cu-timeline > .cu-item::after {
   content: '';
   display: block;
   position: absolute;
-  width: 1upx;
-  background-color: #ddd;
-  left: 60upx;
+  width: 1px;
+  background-color: #dddddd;
+  left: 40upx;
   height: 100%;
   top: 0;
   z-index: 8;
@@ -2029,15 +2021,14 @@ button.cuIcon.xl {
   font-family: 'cuIcon';
   display: block;
   position: absolute;
-  top: 36upx;
+  top: 20upx;
   z-index: 9;
-  background-color: #ffffff;
-  width: 50upx;
+  width: 40upx;
   height: 50upx;
   text-align: center;
   border: none;
   line-height: 50upx;
-  left: 36upx;
+  left: 20upx;
 }
 
 .cu-timeline > .cu-item:not([class*='cuIcon-'])::before {
@@ -2045,25 +2036,17 @@ button.cuIcon.xl {
 }
 
 .cu-timeline > .cu-item[class*='cuIcon-']::before {
-  background-color: #ffffff;
-  width: 50upx;
+  width: 40upx;
   height: 50upx;
   text-align: center;
   border: none;
   line-height: 50upx;
-  left: 36upx;
+  left: 20upx;
 }
 
 .cu-timeline > .cu-item > .content {
-  padding: 30upx;
   border-radius: 6upx;
   display: block;
-  line-height: 1.6;
-}
-
-.cu-timeline > .cu-item > .content:not([class*='bg-']) {
-  background-color: #f1f1f1;
-  color: #333333;
 }
 
 .cu-timeline > .cu-item > .content + .content {
@@ -2341,7 +2324,7 @@ button.cuIcon.xl {
 
 .cu-form-group {
   background-color: #ffffff;
-  padding: 1upx 30upx;
+  padding: 1px 30upx;
   display: flex;
   align-items: center;
   min-height: 100upx;
@@ -2349,7 +2332,7 @@ button.cuIcon.xl {
 }
 
 .cu-form-group + .cu-form-group {
-  border-top: 1upx solid #eee;
+  border-top: 1px solid #eee;
 }
 
 .cu-form-group .title {
@@ -2832,6 +2815,34 @@ scroll-view.cu-steps .cu-item {
   z-index: 10;
 }
 
+.rotate-0 {
+  transform: rotate(0deg);
+  transform-origin: center center;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+  transform-origin: center center;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+  transform-origin: center center;
+}
+
+.flip-h {
+  transform: scaleX(-1);
+}
+
+.flip-v {
+  transform: scaleY(-1);
+}
+
 /*  -- flex弹性布局 -- */
 
 .flex {
@@ -2848,14 +2859,24 @@ scroll-view.cu-steps .cu-item {
   flex-direction: column;
 }
 
+.basis-5,
 .basis-xs {
   flex-basis: 20%;
+}
+
+.basis-4 {
+  flex-basis: 25%;
+}
+
+.basis-3 {
+  flex-basis: 33.3%;
 }
 
 .basis-sm {
   flex-basis: 40%;
 }
 
+.basis-2,
 .basis-df {
   flex-basis: 50%;
 }
@@ -2907,10 +2928,6 @@ scroll-view.cu-steps .cu-item {
 
 .self-start {
   align-self: flex-start;
-}
-
-.self-center {
-  align-self: flex-center;
 }
 
 .self-end {
@@ -3805,6 +3822,10 @@ scroll-view.cu-steps .cu-item {
   text-decoration: underline;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-xs {
   font-size: 20upx;
 }
@@ -3891,6 +3912,10 @@ scroll-view.cu-steps .cu-item {
 
 .text-center {
   text-align: center;
+}
+
+.text-align-middle {
+  vertical-align: middle;
 }
 
 .text-content {
