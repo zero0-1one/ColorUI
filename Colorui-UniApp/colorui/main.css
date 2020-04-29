@@ -10,13 +10,6 @@
 /* ==================
         初始化
  ==================== */
-body {
-  background-color: rgb(242, 242, 242);
-  font-size: 28upx;
-  color: #333333;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-}
-
 view,
 scroll-view,
 swiper,
@@ -34,7 +27,7 @@ image {
 }
 
 .radius {
-  border-radius: 6upx;
+  border-radius: 8upx;
 }
 
 /* ==================
@@ -518,23 +511,23 @@ radio.white.checked .uni-radio-input {
 }
 
 .solids::after {
-  border: 8upx solid #eee;
+  border: 8upx solid rgba(0, 0, 0, 0.1);
 }
 
 .solids-top::after {
-  border-top: 8upx solid #eee;
+  border-top: 8upx solid rgba(0, 0, 0, 0.1);
 }
 
 .solids-right::after {
-  border-right: 8upx solid #eee;
+  border-right: 8upx solid rgba(0, 0, 0, 0.1);
 }
 
 .solids-bottom::after {
-  border-bottom: 8upx solid #eee;
+  border-bottom: 8upx solid rgba(0, 0, 0, 0.1);
 }
 
 .solids-left::after {
-  border-left: 8upx solid #eee;
+  border-left: 8upx solid rgba(0, 0, 0, 0.1);
 }
 
 /* -- 虚线 -- */
@@ -1049,10 +1042,6 @@ button.cuIcon.xl {
 
 .cu-load.loading::after {
   content: '加载中...';
-}
-
-.cu-load.over::before {
-  content: '\e64a';
 }
 
 .cu-load.over::after {
@@ -2800,7 +2789,7 @@ scroll-view.cu-steps .cu-item {
 }
 
 .top-max {
-  z-index: 999;
+  z-index: 9000;
 }
 
 .top-h {
