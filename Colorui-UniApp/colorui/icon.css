@@ -65,6 +65,7 @@
   content: '\e64a';
 }
 .cuIcon-starfill:before,
+.cuIcon-starfill1:before,
 .cuIcon-favorfill:before {
   content: '\e64b';
 }
@@ -76,6 +77,7 @@
 }
 
 .cuIcon-star:before,
+.cuIcon-star1:before,
 .cuIcon-favor:before {
   content: '\e64c';
 }
