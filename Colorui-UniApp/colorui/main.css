@@ -230,7 +230,7 @@ radio.radio .uni-radio-input-checked::after {
   position: absolute;
   width: 8px;
   height: 8px;
-  z-index: 999;
+  z-index: 800;
   top: 0upx;
   left: 0upx;
   right: 0;
@@ -1093,7 +1093,7 @@ button.cuIcon.xl {
   flex-direction: column;
   justify-content: center;
   font-size: 28upx;
-  z-index: 9999;
+  z-index: 900;
   line-height: 2.4em;
 }
 
@@ -1128,7 +1128,7 @@ button.cuIcon.xl {
   position: fixed;
   width: 100%;
   left: 0;
-  z-index: 2000;
+  z-index: 900;
 }
 
 .load-progress.hide {
@@ -1147,7 +1147,7 @@ button.cuIcon.xl {
   position: absolute;
   top: 10upx;
   right: 10upx;
-  z-index: 2000;
+  z-index: 900;
   display: block;
 }
 
@@ -1682,7 +1682,7 @@ button.cuIcon.xl {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1024;
+  z-index: 999;
   box-shadow: 0 1px 6upx rgba(0, 0, 0, 0.1);
 }
 
@@ -1690,7 +1690,7 @@ button.cuIcon.xl {
   position: fixed;
   width: 100%;
   bottom: 0;
-  z-index: 1024;
+  z-index: 999;
   box-shadow: 0 -1px 6upx rgba(0, 0, 0, 0.1);
 }
 
@@ -1906,7 +1906,7 @@ button.cuIcon.xl {
   padding-right: 150upx;
   /* #endif */
   box-shadow: 0upx 0upx 0upx;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .cu-custom .cu-bar .border-custom {
@@ -2420,7 +2420,7 @@ button.cuIcon.xl {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1110;
+  z-index: 999;
   opacity: 0;
   outline: 0;
   text-align: center;
@@ -2801,19 +2801,39 @@ scroll-view.cu-steps .cu-item {
 }
 
 .top-max {
-  z-index: 9000;
+  z-index: 999;
 }
 
 .top-h {
   z-index: 90;
 }
 
+.top-h1 {
+  z-index: 91;
+}
+
+.top-h2 {
+  z-index: 92;
+}
+
 .top-m {
   z-index: 50;
+}
+.top-m1 {
+  z-index: 51;
+}
+.top-m2 {
+  z-index: 52;
 }
 
 .top-l {
   z-index: 10;
+}
+.top-l1 {
+  z-index: 11;
+}
+.top-l2 {
+  z-index: 12;
 }
 
 .rotate-0 {
@@ -3915,7 +3935,7 @@ scroll-view.cu-steps .cu-item {
   text-align: center;
 }
 
-.text-align-middle {
+.text-center-v {
   vertical-align: middle;
 }
 
